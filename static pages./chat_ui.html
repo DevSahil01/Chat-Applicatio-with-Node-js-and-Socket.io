@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat application</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <nav><img src="chat.png" height="50px" width="50px" alt="chat"><h1>Quick Chat</h1></nav>  
+</head>
+<body> 
+<div class="main_container" id="main_container">
+    <div class="container">
+        <div class="msg_container" id="msg_container">
+            <div></div>
+        </div>
+        <form id="form" action="">
+            <button class="send_btn" id="emoji"><img src="smile.png" alt="#" height="30px" width="30px"></button>
+            <input type="text" placeholder="write the message...." class="msg_input" id="input">
+            <button type="submit" class="send_btn"> <img src="send.png" width="30px" height="30px"></button>
+        </form>
+    </div>
+    <div class="show_users" id="show_users"></div>
+</div>
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="client.js">
+</script>
+</body>
+</html>

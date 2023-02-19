@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    background-color: #4C7DFE;
+}
+nav{
+    height:80px;
+    padding-left: 50px;
+    padding-top: 4px;
+}
+nav h1{
+    display: inline;
+    margin-left: 20px;
+    font-size: 40px;
+}
+.main_container{
+    display: flex;
+    flex-direction: row;
+}
+.container form{
+    display: flex;
+}
+.container{
+  width:70vw;
+  height:100%;
+  background-color:whitesmoke;
+}
+.msg_input{
+   background-color: #e4e4e4;
+   height: 50px;
+   width:98%;
+   border: none;
+   border-radius:10px;
+   margin-bottom:10px;
+   caret-color: #4C7DFE;
+   font-size: larger;
+}
+.msg_input:focus{
+    outline: none;
+}
+.send_btn{
+    margin:0px 20px 0 20px;
+    height:50px;
+    width: 60px;
+    background-color:#3f99ff;
+    border: none;
+    border-radius: 100px;
+}
+.msg_container{
+    display: flex;
+    overflow-y: auto;
+    overflow-anchor: auto;
+    background-color:#f8f8f9;
+    flex-direction: column;
+    justify-content: baseline ;
+    width:100%;
+    height:90vh;
+}
+.msg{
+    max-width:max-content;
+    word-wrap: break-word;
+    margin:20px 10px 10px auto;
+    padding: 5px 20px 5px 20px;
+    font-size: large;
+    background-color:#638bfb;
+    color: #f7f8f9;
+    -webkit-box-shadow: 11px 6px 6px -2px rgba(0,0,0,0.19); 
+    box-shadow: 11px 6px 6px -2px rgba(0,0,0,0.19);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.left_msg{
+    max-width:max-content;
+    min-height:max-content;
+    word-wrap: break-word;
+    margin:20px auto 20px 20px;
+    font-size:20px;
+    padding: 5px 20px 5px 20px;
+    background-color:#ffff;
+    color:#252d3a;
+    border:none;
+    -webkit-box-shadow: -8px 6px 6px -2px rgba(0,0,0,0.19); 
+   box-shadow: -8px 6px 6px -2px rgba(0,0,0,0.19);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.show_users{
+    background-color: white;
+    width:30vw;
+    height:98vh;
+    overflow-y: auto;
+}
+.user_msg{
+    margin: auto;
+    margin-top: 20px;
+    width:max-content;
+    height: 30px;
+    text-align: center;
+    background-color: #f4f5f7;
+    color:#358ae9;
+    border-radius: 10px;
+}
+.user_icon{
+    height:40px;
+    width: 40px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-right: 30px;
+    margin-left: 20px;
+    text-align: center;
+}
+@media screen and (max-width: 802px){
+        body{
+            background-color: red;
+        }
+        .main_container{
+            display: flex;
+            flex-direction:column-reverse;
+        }
+        .container{
+            width: 100%;
+        }
+        .show_users{
+            display: flex;
+            height: auto;
+            width: 100%;
+        }
+        .user_icon{
+            margin:0 0 0 0 ;
+        }
+
+}
